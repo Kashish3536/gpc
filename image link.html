@@ -1,0 +1,80 @@
+<!Doctype HTML>
+<html>
+<head><title>Branches</title>
+</head>
+<style>
+   .image-container {
+    overflow: hidden; /* Clear floats */
+  }
+   .image-container img {
+    float: left;
+    /*width: 400px; /* Adjust as needed 
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Optional: Add margin between images */
+  }
+  .image-container {
+   /* text-align: center;  Optional: To center align images */
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 30px; /* Optional: Add padding for spacing */
+  }
+  
+  .image-container img {
+    display: inline-block;
+    /*width: 200px; /* Set width as needed 
+    height: 150px; /* Set height as needed */
+    margin: 20px; /* Optional: Add margin between images */
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transitions */
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    opacity: 0.7; /* Reduce opacity on hover */
+  }
+  
+  .image-container img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Fade in overlay on hover */
+  }
+  
+  .image-container img:hover::before {
+    opacity: 1; /* Fully show overlay on hover */
+  }
+  
+  .image-container img:hover + .overlay-text {
+    opacity: 1; /* Show overlay text on hover */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: o
+
+</style>
+</head>
+<body>
+   <p><h1><center><b><u>Branches</u></b></center></h1></p>
+  <div class="image-container">
+   <h3><u>computer science</u></h3>
+   <a href="syllabus.html"> <img src="computer science.jpg" alt="Image 1" width="300" height="300"></a>
+    <h3><u>mechanical</u> </h3>
+    <a href="mechanical syllabus.html"><img src="mechanical.webp" alt="Image 2" width="300" height="300"></a>
+    <h3><u>Electronics and telecommunication</u> </h3>
+    <a href="ETSyllabus.html"><img src="th.jpg" alt="Image 3" width="300" height="300"></a>
+  </div>
+
+</body>
+</html>
